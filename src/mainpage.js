@@ -64,10 +64,8 @@ export default function FullWidthTabs() {
         <Tabs
           value={value}
           onChange={handleChange}
-          indicatorColor="secondary"
           textColor="inherit"
           variant="fullWidth"
-          aria-label="full width tabs example"
         >
           <Tab label="Coin List" {...a11yProps(0)} />
           <Tab label="Market" {...a11yProps(1)} />
@@ -90,7 +88,7 @@ export default function FullWidthTabs() {
           <Chart />
         </TabPanel>
         <TabPanel value={value} index={3} dir={theme.direction}>
-          4
+          <Typography> Tab under construction </Typography>
         </TabPanel>
       </SwipeableViews>
     </Box>
