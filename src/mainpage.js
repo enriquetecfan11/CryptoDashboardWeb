@@ -59,13 +59,14 @@ export default function FullWidthTabs() {
   };
 
   return (
-    <Box>
+    <Box sx={{bgcolor: '#1E222D'}}>
       <AppBar position="static" fullwidth>
         <Tabs
           value={value}
           onChange={handleChange}
           textColor="inherit"
           variant="fullWidth"
+          overflow="scroll"
         >
           <Tab label="Coin List" {...a11yProps(0)} />
           <Tab label="Market" {...a11yProps(1)} />
