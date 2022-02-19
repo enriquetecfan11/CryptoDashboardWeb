@@ -10,6 +10,8 @@ import Box from "@mui/material/Box";
 
 // pages
 import LiveCoin from "./pages/livecoin";
+import Market from "./pages/market";
+import Chart from "./pages/chart";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -82,10 +84,10 @@ export default function FullWidthTabs() {
           <LiveCoin />
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction}>
-          2
+          <Market />
         </TabPanel>
         <TabPanel value={value} index={2} dir={theme.direction}>
-          3
+          <Chart />
         </TabPanel>
         <TabPanel value={value} index={3} dir={theme.direction}>
           4
