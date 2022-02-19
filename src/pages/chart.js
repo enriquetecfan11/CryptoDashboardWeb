@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { AdvancedRealTimeChart } from "react-ts-tradingview-widgets";
-import { Box, Paper, Chart } from "@mui/material";
+import { Box, Paper} from "@mui/material";
 import "./styles.css";
 
 class chart extends Component {
