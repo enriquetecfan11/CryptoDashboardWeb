@@ -1,12 +1,14 @@
-import {Box} from '@mui/material'
-import React from 'react'
-import MainPage from './mainpage'
-
-const App = () => {
+import { Routes, Route } from "react-router-dom"
+import Home from "./pages/home"
+import MainPage from "./pages/mainpage"
+function App() {
   return (
-    <Box>
-      <MainPage />
-    </Box>
+    <div className="App">
+      <Routes>
+        <Route path="/" element={ <Home/> } />
+        <Route path="/mainpage" element={ <MainPage/> } />
+      </Routes>
+    </div>
   )
 }
 

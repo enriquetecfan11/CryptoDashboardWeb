@@ -9,6 +9,9 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 
 // pages
+import LiveCoin from "./livecoin";
+import Market from "./market";
+import Chart from "./chart";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -43,7 +46,7 @@ function a11yProps(index) {
   };
 }
 
-export default function FullWidthTabs() {
+function Mainpage() {
   const theme = useTheme();
   const [value, setValue] = React.useState(0);
 
@@ -56,15 +59,14 @@ export default function FullWidthTabs() {
   };
 
   return (
-    <Box>
+    <Box sx={{ bgcolor: "#1E222D" }}>
       <AppBar position="static" fullwidth>
         <Tabs
           value={value}
           onChange={handleChange}
-          indicatorColor="secondary"
           textColor="inherit"
           variant="fullWidth"
-          aria-label="full width tabs example"
+          overflow="scroll"
         >
           <Tab label="Coin List" {...a11yProps(0)} />
           <Tab label="Market" {...a11yProps(1)} />
@@ -78,18 +80,20 @@ export default function FullWidthTabs() {
         onChangeIndex={handleChangeIndex}
       >
         <TabPanel value={value} index={0} dir={theme.direction}>
-          1
+          <LiveCoin />
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction}>
-          2
+          <Market />
         </TabPanel>
         <TabPanel value={value} index={2} dir={theme.direction}>
-          3
+          <Chart />
         </TabPanel>
         <TabPanel value={value} index={3} dir={theme.direction}>
-          4
+          <Typography> Tab under construction </Typography>
         </TabPanel>
       </SwipeableViews>
     </Box>
   );
 }
+
+export default Mainpage;
