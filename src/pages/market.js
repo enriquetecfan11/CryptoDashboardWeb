@@ -15,6 +15,7 @@ class Market extends Component {
           <Box
             style={{
               display: "flex",
+              flexWrap: "wrap",
               flexDirection: "row-wrap",
               marginBottom: "20px",
             }}
