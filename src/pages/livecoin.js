@@ -56,16 +56,6 @@ const Market = () => {
                     gutterBottom
                     alignText="center"
                   >
-                    <b>Rank</b>
-                  </Typography>
-                </TableCell>
-                <TableCell>
-                  <Typography
-                    variant="h6"
-                    color="white"
-                    gutterBottom
-                    alignText="center"
-                  >
                     <b>Name</b>
                   </Typography>
                 </TableCell>
@@ -104,16 +94,6 @@ const Market = () => {
             <TableBody>
               {coins.map((coin) => (
                 <TableRow key={coin.id}>
-                  <TableCell>
-                    <Typography
-                      variant="h6"
-                      color="white"
-                      gutterBottom
-                      alignText="center"
-                    >
-                      {coin.market_cap_rank}
-                    </Typography>
-                  </TableCell>
                   <TableCell>
                     <Box display="flex" flexDirection="row" alignItems="center">
                       <img

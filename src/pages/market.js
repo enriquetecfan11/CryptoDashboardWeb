@@ -22,14 +22,14 @@ class Market extends Component {
           >
             <TechnicalAnalysis
               colorTheme="dark"
-              width={450}
+              width={350}
               height={500}
               symbol="BTCUSDT"
               theme="dark"
             />
             <TechnicalAnalysis
               colorTheme="dark"
-              width={450}
+              width={350}
               height={500}
               symbol="ETHUSDT"
               theme="dark"
@@ -37,14 +37,14 @@ class Market extends Component {
             />
             <TechnicalAnalysis
               colorTheme="dark"
-              width={450}
+              width={350}
               height={500}
               symbol="USDTUSD"
               theme="dark"
             />
             <TechnicalAnalysis
               colorTheme="dark"
-              width={450}
+              width={350}
               height={500}
               symbol="BNBUSDT"
               theme="dark"
