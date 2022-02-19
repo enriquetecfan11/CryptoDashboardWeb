@@ -36,6 +36,13 @@ const Market = () => {
     >
       <Grid container spacing={3}>
         <Grid item xs={12}>
+          <Typography variant="h5" gutterBottom alignText="center">
+           Crypto Dashboard - Made by Enrique Rodriguez Vela
+          </Typography>
+        </Grid>
+      </Grid>
+      <Grid container spacing={3}>
+        <Grid item xs={12}>
           <Box
             style={{
               overflowX: "auto",
